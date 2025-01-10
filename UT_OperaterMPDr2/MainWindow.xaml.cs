@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System.Globalization;
+using System.IO;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media.Imaging;
@@ -26,7 +27,7 @@ namespace UT_OperaterMPDr2 {
 
         private TreeViewItem CreateTreeViewItem(DirectoryInfo directoryInfo) {
             TreeViewItem item = new TreeViewItem {
-                Header = CreateHeader(directoryInfo.Name, "FolderIcon"),
+               // Header = CreateHeader(directoryInfo.Name, "FolderIcon"),
                 Tag = directoryInfo
             };
 

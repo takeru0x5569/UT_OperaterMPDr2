@@ -1,5 +1,6 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-    <BitmapImage x:Key="FolderIcon" UriSource="pack://application:,,,/Resources/folder.png" />
-    <BitmapImage x:Key="FileIcon" UriSource="pack://application:,,,/Resources/file.png" />
+    <BitmapImage x:Key="IconFile" UriSource="pack://application:,,,/Resources/File.png" />
+    <BitmapImage x:Key="IconOpen" UriSource="pack://application:,,,/Resources/Open.png" />
+
 </ResourceDictionary>

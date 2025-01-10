@@ -4,14 +4,15 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UT_OperaterMPDr2"
+        xmlns:properties="clr-namespace:UT_OperaterMPDr2.Properties"
         mc:Ignorable="d"
         Title="MainWindow" 
         Height="450" Width="800">
     <DockPanel>
         <!-- メニューストリップ -->
         <Menu DockPanel.Dock="Top">
-            <MenuItem Header="_File">
-                <MenuItem Header="aaa" InputGestureText="Ctrl+O" />
+            <MenuItem Header="{x:Static properties:Resources.Menue_File}">
+                <MenuItem Header="{x:Static properties:Resources.Menue_File}" InputGestureText="Ctrl+O" />
                 <MenuItem Header="SaveMenuItem" InputGestureText="Ctrl+S" />
                 <Separator/>
                 <MenuItem Header="_Exit" InputGestureText="Alt+F4"/>
@@ -26,10 +27,10 @@
         <ToolBarTray DockPanel.Dock="Top">
             <ToolBar>
                 <Button ToolTip="Open Folder">
-                    <Image Source="{StaticResource FolderIcon}"  Width="16" Height="16"/>
+                    <Image Source="{StaticResource IconFile}"  Width="16" Height="16"/>
                 </Button>
                 <Button ToolTip="Open Folder">
-                    <Image Source="{StaticResource FileIcon}"  Width="16" Height="16"/>
+                    <Image Source="{StaticResource IconOpen}"  Width="16" Height="16"/>
                 </Button>
                 <!-- 他のツールバーボタン -->
             </ToolBar>
