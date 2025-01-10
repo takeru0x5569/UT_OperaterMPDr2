@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Properties\Resources.Designer.cs" />
+    <Compile Remove="Properties\Resources.ja.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\file.png" />
+    <None Remove="Resources\folder.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.Designer.cs" />
+    <EmbeddedResource Include="Properties\Resources.ja.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\file.png" />
+    <Resource Include="Resources\folder.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Resources\WordMeune.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>WordMeune.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\WordMeune.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>WordMeune.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

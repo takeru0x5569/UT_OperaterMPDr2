@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="AssemblyInfo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\AssemblyInfo.cs;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;iso-2022-jp</value>
+  </data>
+  <data name="CopyFuncEx" xml:space="preserve">
+    <value>Copy data to clipboard</value>
+    <comment>データをクリップボードへコピーします</comment>
+  </data>
+  <data name="CutFuncEx" xml:space="preserve">
+    <value>Cut data to clipboard</value>
+    <comment>データを切り取ってクリップボードへ移動します</comment>
+  </data>
+  <data name="FormTitle" xml:space="preserve">
+    <value>Recipe Editor</value>
+  </data>
+  <data name="Material" xml:space="preserve">
+    <value>Material</value>
+    <comment>固体中</comment>
+  </data>
+  <data name="MenueEdit" xml:space="preserve">
+    <value>Edit(_E)</value>
+    <comment>ファイル編集</comment>
+  </data>
+  <data name="MenueEdit_Copy" xml:space="preserve">
+    <value>Copy</value>
+    <comment>コピー</comment>
+  </data>
+  <data name="MenueEdit_Cut" xml:space="preserve">
+    <value>Cut</value>
+    <comment>切り取り編集</comment>
+  </data>
+  <data name="MenueEdit_Paste" xml:space="preserve">
+    <value>Paste</value>
+    <comment>貼り付け</comment>
+  </data>
+  <data name="MenueFile" xml:space="preserve">
+    <value>File(_F)</value>
+  </data>
+  <data name="MenueFile_Exit" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="MenueFile_Open" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="MenueFile_Print" xml:space="preserve">
+    <value>Print</value>
+    <comment>印刷</comment>
+  </data>
+  <data name="MenueFile_SpecSave" xml:space="preserve">
+    <value>Save with specified file name</value>
+    <comment>名前を指定して保存</comment>
+  </data>
+  <data name="MenueFile_Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="OpenFuncEx" xml:space="preserve">
+    <value>Open Recipi file</value>
+    <comment>レシピファイルをオープンします</comment>
+  </data>
+  <data name="PasteFuncEx" xml:space="preserve">
+    <value>Paste data from clipboard</value>
+    <comment>クリップボードのデータを貼り付けます</comment>
+  </data>
+  <data name="QuitFuncEx" xml:space="preserve">
+    <value>Quit this application</value>
+    <comment>このアプリケーションを終了します</comment>
+  </data>
+  <data name="RecipiFile" xml:space="preserve">
+    <value>Recipi File</value>
+    <comment>レシピファイル</comment>
+  </data>
+  <data name="SaveFuncEx" xml:space="preserve">
+    <value>Save Recipi file</value>
+    <comment>レシピファイルを上書き保存します</comment>
+  </data>
+  <data name="Ultrasound_Speed" xml:space="preserve">
+    <value>Ultrasound Speed</value>
+    <comment>超音波速度一式のラベル名</comment>
+  </data>
+  <data name="Water" xml:space="preserve">
+    <value>Water</value>
+    <comment>水中</comment>
+  </data>
+  <data name="MenueDisplay" xml:space="preserve">
+    <value>Display(_D)</value>
+    <comment>表示</comment>
+  </data>
+  <data name="MenueDisplay_Magnify" xml:space="preserve">
+    <value>Magnify</value>
+    <comment>拡大</comment>
+  </data>
+  <data name="MenueDisplay_Reduce" xml:space="preserve">
+    <value>Reduce</value>
+    <comment>縮小</comment>
+  </data>
+  <data name="MenueSetting" xml:space="preserve">
+    <value>Setting(_S)</value>
+    <comment>設定</comment>
+  </data>
+  <data name="MenueSetting_Lang" xml:space="preserve">
+    <value>Language</value>
+    <comment>言語</comment>
+  </data>
+  <data name="MenueHelp" xml:space="preserve">
+    <value>Help(_H)</value>
+    <comment>ヘルプ</comment>
+  </data>
+  <data name="MenueHelp_Guide" xml:space="preserve">
+    <value>Guide</value>
+    <comment>ユーザガイド</comment>
+  </data>
+  <data name="MenueHelp_Ver" xml:space="preserve">
+    <value>Version</value>
+    <comment>バージョン情報</comment>
+  </data>
+  <data name="MagnifyFuncEx" xml:space="preserve">
+    <value>Magnify</value>
+    <comment>拡大</comment>
+  </data>
+  <data name="ReduceFuncEx" xml:space="preserve">
+    <value>Reduce</value>
+    <comment>縮小</comment>
+  </data>
+  <data name="ExScanSetCap" xml:space="preserve">
+    <value>Scan setting</value>
+    <comment>スキャン設定</comment>
+  </data>
+  <data name="ExScanRangeCap" xml:space="preserve">
+    <value>Scan range</value>
+    <comment>スキャン範囲</comment>
+  </data>
+  <data name="ExPulserReceiverCap" xml:space="preserve">
+    <value>PulserReceiver</value>
+    <comment>パルサーレシーバー</comment>
+  </data>
+  <data name="ExAScopeCap" xml:space="preserve">
+    <value>A-Scope</value>
+    <comment>A-スコープ</comment>
+  </data>
+  <data name="ExADConvCap" xml:space="preserve">
+    <value>A/D Conversion</value>
+    <comment>A/D変換</comment>
+  </data>
+  <data name="GridColNameItem" xml:space="preserve">
+    <value>Item</value>
+    <comment>項目</comment>
+  </data>
+  <data name="GridColNameSetting" xml:space="preserve">
+    <value>Setting</value>
+    <comment>設定</comment>
+  </data>
+  <data name="GridColNameScanAxis" xml:space="preserve">
+    <value>ScanAxis</value>
+    <comment>スキャン軸</comment>
+  </data>
+  <data name="GridColNameStepAxis" xml:space="preserve">
+    <value>StepAxis</value>
+    <comment>ステップ軸</comment>
+  </data>
+  <data name="GridColNameChA" xml:space="preserve">
+    <value>Ch-A</value>
+    <comment>Ch-A</comment>
+  </data>
+  <data name="GridColNameChB" xml:space="preserve">
+    <value>Ch-B</value>
+    <comment>Ch-B</comment>
+  </data>
+  <data name="NoticePrintFinished" xml:space="preserve">
+    <value>Printing Finished</value>
+    <comment>印刷完了しました</comment>
+  </data>
+  <data name="InfoCaption" xml:space="preserve">
+    <value>Information</value>
+    <comment>通知</comment>
+  </data>
+</root>

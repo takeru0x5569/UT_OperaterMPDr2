@@ -1,0 +1,68 @@
+﻿<Window x:Class="UT_OperaterMPDr2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UT_OperaterMPDr2"
+        mc:Ignorable="d"
+        Title="MainWindow" 
+        Height="450" Width="800">
+    <DockPanel>
+        <!-- メニューストリップ -->
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_File">
+                <MenuItem Header="aaa" InputGestureText="Ctrl+O" />
+                <MenuItem Header="SaveMenuItem" InputGestureText="Ctrl+S" />
+                <Separator/>
+                <MenuItem Header="_Exit" InputGestureText="Alt+F4"/>
+            </MenuItem>
+            <MenuItem Header="_Edit">
+                <MenuItem Header="_Undo"  InputGestureText="Ctrl+Z"/>
+                <MenuItem Header="_Redo"  InputGestureText="Ctrl+Y"/>
+            </MenuItem>
+        </Menu>
+
+        <!-- ツールバー -->
+        <ToolBarTray DockPanel.Dock="Top">
+            <ToolBar>
+                <Button ToolTip="Open Folder">
+                    <Image Source="{StaticResource FolderIcon}"  Width="16" Height="16"/>
+                </Button>
+                <Button ToolTip="Open Folder">
+                    <Image Source="{StaticResource FileIcon}"  Width="16" Height="16"/>
+                </Button>
+                <!-- 他のツールバーボタン -->
+            </ToolBar>
+        </ToolBarTray>
+
+        <!-- ステータスストリップ -->
+        <StatusBar DockPanel.Dock="Bottom">
+            <StatusBarItem>
+                <TextBlock Text="Ready" FontSize="14"/>
+            </StatusBarItem>
+        </StatusBar>
+
+        <!-- メインコンテンツ -->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200" MinWidth="100"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- 左サイドバー -->
+            <StackPanel Grid.Column="0" Background="LightGray">
+                <TextBlock Text="Sidebar" Margin="10"/>
+                <TreeView x:Name="FolderTreeView" SelectedItemChanged="FolderTreeView_SelectedItemChanged"/>
+            </StackPanel>
+
+            <!-- GridSplitter -->
+            <GridSplitter Grid.Column="1" Width="5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="Gray"/>
+
+            <!-- ユーザーコントロールのインクルード -->
+            <ContentControl Grid.Column="2">
+                <local:MainView />
+            </ContentControl>
+        </Grid>
+    </DockPanel>
+</Window>
