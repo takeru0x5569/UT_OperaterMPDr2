@@ -61,7 +61,178 @@ namespace UT_OperaterMPDr2.Properties {
         }
         
         /// <summary>
-        ///   File に類似しているローカライズされた文字列を検索します。
+        ///   UT_OperaterMDP に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string App_Title {
+            get {
+                return ResourceManager.GetString("App_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Action(_A) に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string Menue_Action {
+            get {
+                return ResourceManager.GetString("Menue_Action", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Connect(_C) に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string Menue_Action_Connect {
+            get {
+                return ResourceManager.GetString("Menue_Action_Connect", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Disconnect(_D) に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string Menue_Action_Disconnect {
+            get {
+                return ResourceManager.GetString("Menue_Action_Disconnect", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Initialize scanner(_I) に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string Menue_Action_Initialize {
+            get {
+                return ResourceManager.GetString("Menue_Action_Initialize", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Probe escape(_E) に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string Menue_Action_ProbeEscape {
+            get {
+                return ResourceManager.GetString("Menue_Action_ProbeEscape", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recipe upload(_R) に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string Menue_Action_RecipeUpload {
+            get {
+                return ResourceManager.GetString("Menue_Action_RecipeUpload", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Scandata save(_L) に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string Menue_Action_ScandataSave {
+            get {
+                return ResourceManager.GetString("Menue_Action_ScandataSave", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Scan start(_S) に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string Menue_Action_ScanStart {
+            get {
+                return ResourceManager.GetString("Menue_Action_ScanStart", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Scan stop(_Q) に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string Menue_Action_ScanStop {
+            get {
+                return ResourceManager.GetString("Menue_Action_ScanStop", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Stage down(_K) に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string Menue_Action_StageDown {
+            get {
+                return ResourceManager.GetString("Menue_Action_StageDown", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Stage up(_J) に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string Menue_Action_StageUp {
+            get {
+                return ResourceManager.GetString("Menue_Action_StageUp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Barcode(_B) に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string Menue_Barcode {
+            get {
+                return ResourceManager.GetString("Menue_Barcode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   ChA Partition1(_1) に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string Menue_BarcodeA1 {
+            get {
+                return ResourceManager.GetString("Menue_BarcodeA1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   ChA Partition2(_2) に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string Menue_BarcodeA2 {
+            get {
+                return ResourceManager.GetString("Menue_BarcodeA2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   ChA Partition3(_3) に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string Menue_BarcodeA3 {
+            get {
+                return ResourceManager.GetString("Menue_BarcodeA3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   ChB Partition1(_1) に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string Menue_BarcodeB1 {
+            get {
+                return ResourceManager.GetString("Menue_BarcodeB1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   ChB Partition2(_2) に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string Menue_BarcodeB2 {
+            get {
+                return ResourceManager.GetString("Menue_BarcodeB2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   ChB Partition3(_3) に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string Menue_BarcodeB3 {
+            get {
+                return ResourceManager.GetString("Menue_BarcodeB3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   File(_F) に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string Menue_File {
             get {
@@ -70,11 +241,38 @@ namespace UT_OperaterMPDr2.Properties {
         }
         
         /// <summary>
-        ///   Open に類似しているローカライズされた文字列を検索します。
+        ///   Edit template(for Manager)(_U) に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        public static string Menue_Open {
+        public static string Menue_File_TemplateEdit {
             get {
-                return ResourceManager.GetString("Menue_Open", resourceCulture);
+                return ResourceManager.GetString("Menue_File_TemplateEdit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Save template(_S) に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string Menue_File_TemplateSave {
+            get {
+                return ResourceManager.GetString("Menue_File_TemplateSave", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Update Worktemplate(_E) に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string Menue_File_TemplateUpdate {
+            get {
+                return ResourceManager.GetString("Menue_File_TemplateUpdate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Initialize probe position に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string TIps_Initialize {
+            get {
+                return ResourceManager.GetString("TIps_Initialize", resourceCulture);
             }
         }
     }

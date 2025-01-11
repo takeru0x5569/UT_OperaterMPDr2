@@ -7,18 +7,124 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
     <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyVersion>0.0.0</AssemblyVersion>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\Action.drawio.png" />
+    <None Remove="Resources\Barcode.drawio.png" />
+    <None Remove="Resources\BarcodeAll.drawio.png" />
+    <None Remove="Resources\Barcode_2PChA1.drawio.png" />
+    <None Remove="Resources\Barcode_2PChA2.drawio.png" />
+    <None Remove="Resources\Barcode_2PChB1.drawio.png" />
+    <None Remove="Resources\Barcode_2PChB2.drawio.png" />
+    <None Remove="Resources\Barcode_3PChA1.drawio.png" />
+    <None Remove="Resources\Barcode_3PChA2.drawio.png" />
+    <None Remove="Resources\Barcode_3PChA3.drawio.png" />
+    <None Remove="Resources\Barcode_3PChB1.drawio.png" />
+    <None Remove="Resources\Barcode_3PChB2.drawio.png" />
+    <None Remove="Resources\Barcode_3PChB3.drawio.png" />
+    <None Remove="Resources\Btn_AbsPeak_16x16.png" />
+    <None Remove="Resources\Btn_AbsTof_16x16.png" />
+    <None Remove="Resources\Btn_FallingTof_16x16.png" />
+    <None Remove="Resources\Btn_NegPeak_16x16.png" />
+    <None Remove="Resources\Btn_NegTof_16x16.png" />
+    <None Remove="Resources\Btn_PosPeak_16x16.png" />
+    <None Remove="Resources\Btn_PosTof_16x16.png" />
+    <None Remove="Resources\Btn_RisingTof_16x16.png" />
+    <None Remove="Resources\ChA-Pat1.drawio.png" />
+    <None Remove="Resources\ChA-Pat1.drawio2.png" />
+    <None Remove="Resources\ChA-Pat2.drawio.png" />
+    <None Remove="Resources\ChA-Pat2.drawio2.png" />
+    <None Remove="Resources\ChA-Pat3.drawio.png" />
+    <None Remove="Resources\ChB-Pat1.drawio.png" />
+    <None Remove="Resources\ChB-Pat1.drawio2.png" />
+    <None Remove="Resources\ChB-Pat2.drawio.png" />
+    <None Remove="Resources\ChB-Pat2.drawio2.png" />
+    <None Remove="Resources\ChB-Pat3.drawio.png" />
+    <None Remove="Resources\Check.drawio.png" />
+    <None Remove="Resources\Connect.drawio.png" />
+    <None Remove="Resources\DisConnect.drawio.png" />
+    <None Remove="Resources\Edit.drawio.png" />
+    <None Remove="Resources\err_icon.png" />
+    <None Remove="Resources\Escape.drawio.png" />
+    <None Remove="Resources\Exit.drawio.png" />
+    <None Remove="Resources\File.drawio.png" />
     <None Remove="Resources\file.png" />
+    <None Remove="Resources\Folder.drawio.png" />
     <None Remove="Resources\folder.png" />
+    <None Remove="Resources\Help.drawio.png" />
+    <None Remove="Resources\icon.ico" />
+    <None Remove="Resources\Image.drawio.png" />
+    <None Remove="Resources\info_icon.png" />
+    <None Remove="Resources\LoadRecipe.png" />
+    <None Remove="Resources\LostBarcode.drawio.png" />
+    <None Remove="Resources\no_data.png" />
+    <None Remove="Resources\no_img.png" />
     <None Remove="Resources\Open.png" />
+    <None Remove="Resources\question_icon.png" />
+    <None Remove="Resources\Save.drawio.png" />
+    <None Remove="Resources\ScannerDown.drawio.png" />
+    <None Remove="Resources\ScannerInit.drawio.png" />
+    <None Remove="Resources\ScannerUp.drawio.png" />
+    <None Remove="Resources\Setting.drawio.png" />
+    <None Remove="Resources\Start.drawio.png" />
+    <None Remove="Resources\Stop.drawio.png" />
+    <None Remove="Resources\Update.drawio.png" />
+    <None Remove="Resources\UserManual.drawio.png" />
+    <None Remove="Resources\warn_icon.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Resources\Action.drawio.png" />
+    <Resource Include="Resources\Barcode.drawio.png" />
+    <Resource Include="Resources\BarcodeAll.drawio.png" />
+    <Resource Include="Resources\Barcode_2PChA1.drawio.png" />
+    <Resource Include="Resources\Barcode_2PChA2.drawio.png" />
+    <Resource Include="Resources\Barcode_2PChB1.drawio.png" />
+    <Resource Include="Resources\Barcode_2PChB2.drawio.png" />
+    <Resource Include="Resources\Barcode_3PChA1.drawio.png" />
+    <Resource Include="Resources\Barcode_3PChA2.drawio.png" />
+    <Resource Include="Resources\Barcode_3PChA3.drawio.png" />
+    <Resource Include="Resources\Barcode_3PChB1.drawio.png" />
+    <Resource Include="Resources\Barcode_3PChB2.drawio.png" />
+    <Resource Include="Resources\Barcode_3PChB3.drawio.png" />
+    <Resource Include="Resources\Btn_AbsPeak_16x16.png" />
+    <Resource Include="Resources\Btn_AbsTof_16x16.png" />
+    <Resource Include="Resources\Btn_FallingTof_16x16.png" />
+    <Resource Include="Resources\Btn_NegPeak_16x16.png" />
+    <Resource Include="Resources\Btn_NegTof_16x16.png" />
+    <Resource Include="Resources\Btn_PosPeak_16x16.png" />
+    <Resource Include="Resources\Btn_PosTof_16x16.png" />
+    <Resource Include="Resources\Btn_RisingTof_16x16.png" />
+    <Resource Include="Resources\Check.drawio.png" />
+    <Resource Include="Resources\Connect.drawio.png" />
+    <Resource Include="Resources\DisConnect.drawio.png" />
+    <Resource Include="Resources\Edit.drawio.png" />
+    <Resource Include="Resources\err_icon.png" />
+    <Resource Include="Resources\Escape.drawio.png" />
     <Resource Include="Resources\file.png" />
-    <Resource Include="Resources\folder.png" />
+    <Resource Include="Resources\Folder.drawio.png" />
+    <Resource Include="Resources\Help.drawio.png" />
+    <Resource Include="Resources\icon.ico" />
+    <Resource Include="Resources\Image.drawio.png" />
+    <Resource Include="Resources\info_icon.png" />
+    <Resource Include="Resources\LoadRecipe.png" />
+    <Resource Include="Resources\LostBarcode.drawio.png" />
+    <Resource Include="Resources\no_data.png" />
+    <Resource Include="Resources\no_img.png" />
     <Resource Include="Resources\Open.png" />
+    <Resource Include="Resources\question_icon.png" />
+    <Resource Include="Resources\Save.drawio.png" />
+    <Resource Include="Resources\ScannerDown.drawio.png" />
+    <Resource Include="Resources\ScannerInit.drawio.png" />
+    <Resource Include="Resources\ScannerUp.drawio.png" />
+    <Resource Include="Resources\Setting.drawio.png" />
+    <Resource Include="Resources\Start.drawio.png" />
+    <Resource Include="Resources\Stop.drawio.png" />
+    <Resource Include="Resources\Update.drawio.png" />
+    <Resource Include="Resources\UserManual.drawio.png" />
+    <Resource Include="Resources\warn_icon.png" />
   </ItemGroup>
 
   <ItemGroup>

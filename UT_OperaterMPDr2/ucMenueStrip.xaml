@@ -1,0 +1,106 @@
+﻿<UserControl x:Class="UT_OperaterMPDr2.ucMenueStrip"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:UT_OperaterMPDr2"
+             xmlns:properties="clr-namespace:UT_OperaterMPDr2.Properties"
+             mc:Ignorable="d" >
+    <Menu FontSize="20">
+        <!--ファイル-->
+        <MenuItem Header="{x:Static properties:Resources.Menue_File}">
+            <MenuItem.Icon>
+                <Image Source="{StaticResource IconFolder}"/>
+            </MenuItem.Icon>
+            <!--テンプレート更新-->
+            <MenuItem Header="{x:Static properties:Resources.Menue_File_TemplateUpdate}" InputGestureText="F5">
+                <MenuItem.Icon>
+                    <Image Source="{StaticResource IconAction}"/>
+                </MenuItem.Icon>
+            </MenuItem>
+            <!--テンプレート保存-->
+            <Separator/>
+            <MenuItem Header="{x:Static properties:Resources.Menue_File_TemplateSave}" InputGestureText="F6">
+                <MenuItem.Icon>
+                    <Image Source="{StaticResource IconAction}"/>
+                </MenuItem.Icon>
+            </MenuItem>
+            <!--テンプレート編集-->
+            <Separator/>
+            <MenuItem Header="{x:Static properties:Resources.Menue_File_TemplateEdit}" InputGestureText="F7">
+                <MenuItem.Icon>
+                    <Image Source="{StaticResource IconAction}"/>
+                </MenuItem.Icon>
+            </MenuItem>
+        </MenuItem>
+        <!--操作 -->
+        <MenuItem Header="{x:Static properties:Resources.Menue_Action}">
+            <MenuItem.Icon>
+                <Image Source="{StaticResource IconAction}"/>
+            </MenuItem.Icon>
+            <!--接続-->
+            <MenuItem Header="{x:Static properties:Resources.Menue_Action_Connect}"  InputGestureText="Ctrl+Shift+C">
+                <MenuItem.Icon>
+                    <Image Source="{StaticResource IconConnect}"/>
+                </MenuItem.Icon>
+            </MenuItem>
+            <!--切断-->
+            <MenuItem Header="{x:Static properties:Resources.Menue_Action_Disconnect}"  InputGestureText="Ctrl+Shift+Q">
+            </MenuItem>
+            <Separator/>
+            <!--スキャン開始-->
+            <MenuItem Header="{x:Static properties:Resources.Menue_Action_ScanStart}"  InputGestureText="Ctrl+Shift+R">
+            </MenuItem>
+            <!--スキャン停止-->
+            <MenuItem Header="{x:Static properties:Resources.Menue_Action_ScanStop}"  InputGestureText="Ctrl+Shift+P">
+            </MenuItem>
+            <Separator/>
+            <!--初期化-->
+            <MenuItem Header="{x:Static properties:Resources.Menue_Action_Initialize}"  InputGestureText="Ctrl+Shift+I">
+            </MenuItem>
+            <Separator/>
+            <!--プローブ退避-->
+            <MenuItem Header="{x:Static properties:Resources.Menue_Action_ProbeEscape}"  InputGestureText="Ctrl+Shift+E">
+                <MenuItem.Icon>
+                    <Image Source="{StaticResource IconEscape}"/>
+                </MenuItem.Icon>
+            </MenuItem>
+            <!--ステージ上昇-->
+            <MenuItem Header="{x:Static properties:Resources.Menue_Action_StageUp}"  InputGestureText="Ctrl+Shift+Up">
+            </MenuItem>
+            <!--ステージ下降-->
+            <MenuItem Header="{x:Static properties:Resources.Menue_Action_StageDown}"  InputGestureText="Ctrl+Shift+Down">
+            </MenuItem>
+        </MenuItem>
+        <!--バーコード-->
+        <MenuItem Header="{x:Static properties:Resources.Menue_Barcode}">
+            <MenuItem.Icon>
+                <Image Source="{StaticResource Barcode}"/>
+            </MenuItem.Icon>
+            <!--CHA P1-->
+            <MenuItem Header="{x:Static properties:Resources.Menue_BarcodeA1}"  InputGestureText="Alt+1">
+                <MenuItem.Icon>
+                    <Image Source="{StaticResource Barcode_3PChA1}"/>
+                </MenuItem.Icon>
+            </MenuItem>
+            <!--CHB P1-->
+            <MenuItem Header="{x:Static properties:Resources.Menue_BarcodeB1}"  InputGestureText="Alt+2">
+                <MenuItem.Icon>
+                    <Image Source="{StaticResource Barcode_3PChB1}"/>
+                </MenuItem.Icon>
+            </MenuItem>
+            <!--CHA P2-->
+            <MenuItem Header="{x:Static properties:Resources.Menue_BarcodeA2}"  InputGestureText="Alt+3">
+                <MenuItem.Icon>
+                    <Image Source="{StaticResource Barcode_3PChA2}"/>
+                </MenuItem.Icon>
+            </MenuItem>
+            <!--CHB P2-->
+            <MenuItem Header="{x:Static properties:Resources.Menue_BarcodeB2}"  InputGestureText="Alt+4">
+                <MenuItem.Icon>
+                    <Image Source="{StaticResource Barcode_3PChB2}"/>
+                </MenuItem.Icon>
+            </MenuItem>
+        </MenuItem>
+    </Menu>
+</UserControl>
