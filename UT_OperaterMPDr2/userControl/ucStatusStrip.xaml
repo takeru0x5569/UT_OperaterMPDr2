@@ -4,10 +4,11 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:UT_OperaterMPDr2"
+             xmlns:userControl="clr-namespace:UT_OperaterMPDr2.userControl"
              xmlns:properties="clr-namespace:UT_OperaterMPDr2.Properties"
              mc:Ignorable="d"
-             d:DataContext="{d:DesignInstance local:StatusBarViewModel, IsDesignTimeCreatable=True}"
-             Width="600">
+             d:DataContext="{d:DesignInstance local:clsAppCore, IsDesignTimeCreatable=True}"
+             >
     <UserControl.Resources>
         <!-- ステータスバーのテキストブロックのスタイル -->
         <Style TargetType="TextBlock" x:Key="StatusTextBlockStyle">
@@ -19,10 +20,10 @@
             <Setter Property="TextAlignment" Value="Center"/>
             
             <Style.Triggers>
-                <DataTrigger Binding="{Binding IsActive}" Value="True">
+                <DataTrigger Binding="{Binding ToggleFlag}" Value="True">
                     <Setter Property="Foreground" Value="White"/>
                 </DataTrigger>
-                <DataTrigger Binding="{Binding IsActive}" Value="False">
+                <DataTrigger Binding="{Binding ToggleFlag}" Value="False">
                     <Setter Property="Foreground" Value="White"/>
                 </DataTrigger>
             </Style.Triggers>
@@ -36,10 +37,10 @@
             <Setter Property="Margin" Value="1"/>
             <Setter Property="VerticalAlignment" Value="Center"/>
             <Style.Triggers>
-                <DataTrigger Binding="{Binding IsActive}" Value="True">
+                <DataTrigger Binding="{Binding ToggleFlag}" Value="True">
                     <Setter Property="Background" Value="Green"/>
                 </DataTrigger>
-                <DataTrigger Binding="{Binding IsActive}" Value="False">
+                <DataTrigger Binding="{Binding ToggleFlag}" Value="False">
                     <Setter Property="Background" Value="Red"/>
                 </DataTrigger>
             </Style.Triggers>
@@ -48,12 +49,12 @@
     <StatusBar>
         <StatusBarItem>
             <Border Style="{StaticResource StatusBorderStyle}">
-                <TextBlock Text="{Binding StatusText1}" Style="{StaticResource StatusTextBlockStyle}"/>
+                <TextBlock Text="{Binding ToggleFlag}" Style="{StaticResource StatusTextBlockStyle}"/>
             </Border>        
         </StatusBarItem>
         <StatusBarItem>
             <Border Style="{StaticResource StatusBorderStyle}">
-                <TextBlock Text="{Binding StatusText2}" Style="{StaticResource StatusTextBlockStyle}"/>
+                <TextBlock Text="{Binding ToggleFlag}" Style="{StaticResource StatusTextBlockStyle}"/>
             </Border>
         </StatusBarItem>
     </StatusBar>

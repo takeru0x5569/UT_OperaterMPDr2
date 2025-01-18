@@ -117,7 +117,34 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="App_Title" xml:space="preserve">
-    <value>UT_オペレーターMDP</value>
+  <data name="Connect" xml:space="preserve">
+    <value>Connect</value>
+  </data>
+  <data name="DisConnect" xml:space="preserve">
+    <value>Disconnect</value>
+  </data>
+  <data name="Escape" xml:space="preserve">
+    <value>Escape probe</value>
+  </data>
+  <data name="Init" xml:space="preserve">
+    <value>Initialize scanner</value>
+  </data>
+  <data name="RecipeUpload" xml:space="preserve">
+    <value>Upload recipe file</value>
+  </data>
+  <data name="SaveData" xml:space="preserve">
+    <value>Save scan data</value>
+  </data>
+  <data name="ScanStart" xml:space="preserve">
+    <value>Start scan</value>
+  </data>
+  <data name="ScanStop" xml:space="preserve">
+    <value>Stop scan</value>
+  </data>
+  <data name="StageDown" xml:space="preserve">
+    <value>Sage down</value>
+  </data>
+  <data name="StageUp" xml:space="preserve">
+    <value>Stage up</value>
   </data>
 </root>

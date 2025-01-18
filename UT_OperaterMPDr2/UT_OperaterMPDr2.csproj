@@ -120,7 +120,6 @@
     <Resource Include="Resources\ScannerInit.drawio.png" />
     <Resource Include="Resources\ScannerUp.drawio.png" />
     <Resource Include="Resources\Setting.drawio.png" />
-    <Resource Include="Resources\Start.drawio.png" />
     <Resource Include="Resources\Stop.drawio.png" />
     <Resource Include="Resources\Update.drawio.png" />
     <Resource Include="Resources\UserManual.drawio.png" />
@@ -133,12 +132,30 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Update="userControl\ucMenueStripRES.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ucMenueStripRES.resx</DependentUpon>
+    </Compile>
+    <Compile Update="userControl\ucToolBarRES.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ucToolBarRES.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Update="Properties\Resources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="userControl\ucMenueStripRES.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ucMenueStripRES.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="userControl\ucToolBarRES.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ucToolBarRES.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
 

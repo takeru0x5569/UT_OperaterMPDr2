@@ -117,7 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="App_Title" xml:space="preserve">
-    <value>UT_オペレーターMDP</value>
+  <data name="Action" xml:space="preserve">
+    <value>操作(_A)</value>
+  </data>
+  <data name="File" xml:space="preserve">
+    <value>ファイル(_F)</value>
   </data>
 </root>

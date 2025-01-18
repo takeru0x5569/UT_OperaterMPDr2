@@ -16,10 +16,10 @@ using System.Windows.Shapes;
 
 namespace UT_OperaterMPDr2 {
     /// <summary>
-    /// ucSidebar.xaml の相互作用ロジック
+    /// ucFolderTree.xaml の相互作用ロジック
     /// </summary>
-    public partial class ucSidebar:UserControl {
-        public ucSidebar() {
+    public partial class ucFolderTree:UserControl {
+        public ucFolderTree() {
             InitializeComponent();
             LoadRootFolders();
         }
@@ -107,6 +107,9 @@ namespace UT_OperaterMPDr2 {
         private void FolderTreeView_SelectedItemChanged(object sender, RoutedPropertyChangedEventArgs<object> e) {
             // 選択されたフォルダまたはファイルに対する処理をここに追加
         }
+
+
+
     }//class
 }//namespace
 

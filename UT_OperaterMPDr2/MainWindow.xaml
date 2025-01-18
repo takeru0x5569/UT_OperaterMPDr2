@@ -14,15 +14,29 @@
         <!--ツールバー-->
         <local:ucToolBar DockPanel.Dock="Top"/>
         <!--ステータスストリップ-->
-        <local:ucStatusStrip DockPanel.Dock="Bottom"/>
-        <!-- 左サイドバー -->
-        <local:ucSidebar DockPanel.Dock="Left"/>
-        <!--メインコンテンツ-->
-        <Grid>
-            <!-- ユーザーコントロールのインクルード -->
+        <local:ucStatusStrip x:Name="_ucStatusStrip" DockPanel.Dock="Bottom"/>
+
+        <!-- メインコンテンツを含むグリッド -->
+        <Grid DockPanel.Dock="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <!-- ucFolderTreeの初期幅 -->
+                <ColumnDefinition Width="5"/>
+                <!-- グリッドスプリッターの幅 -->
+                <ColumnDefinition Width="*"/>
+                <!-- MainViewの幅 -->
+            </Grid.ColumnDefinitions>
+
+            <!-- フォルダツリー -->
+            <local:ucFolderTree Grid.Column="0"/>
+            <!-- グリッドスプリッター -->
+            <GridSplitter Grid.Column="1" Width="5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" ResizeBehavior="PreviousAndNext"/>
+            <!-- メインコンテンツ -->
             <ContentControl Grid.Column="2">
-                <local:MainView />
+                <local:ucMainContents />
             </ContentControl>
         </Grid>
+
+
     </DockPanel>
 </Window>

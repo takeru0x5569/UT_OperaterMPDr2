@@ -4,6 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:UT_OperaterMPDr2"
+             xmlns:userControl="clr-namespace:UT_OperaterMPDr2.userControl"
              xmlns:properties="clr-namespace:UT_OperaterMPDr2.Properties"
              mc:Ignorable="d">
     <UserControl.Resources>
@@ -16,12 +17,18 @@
     </UserControl.Resources>
         <ToolBarTray>
         <ToolBar>
-            <Button Style="{StaticResource ToolBarButtonStyle}" ToolTip="{x:Static properties:Resources.TIps_Initialize}">
-                <Image Source="{StaticResource IconAction}"/>
+            <!--接続-->
+            <Button Style="{StaticResource ToolBarButtonStyle}" ToolTip="{x:Static userControl:ucToolBarRES.Connect}">
+                <Image Source="{StaticResource IconConnect}"/>
             </Button>
-            <Button Style="{StaticResource ToolBarButtonStyle}" ToolTip="Open Folder">
-                <Image Source="{StaticResource Barcode_3PChA1}"/>
+            <!--切断-->
+            <Button Style="{StaticResource ToolBarButtonStyle}" ToolTip="{x:Static userControl:ucToolBarRES.DisConnect}">
+                <Image Source="{StaticResource IconDisConnect}"/>
             </Button>
+            <!--初期化-->
+            
+            
+            
         </ToolBar>
     </ToolBarTray>
 </UserControl>
