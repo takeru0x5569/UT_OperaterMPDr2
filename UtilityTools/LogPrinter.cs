@@ -2,11 +2,10 @@
 using System.Net.Sockets;
 using System.Net;
 using System.Text;
-//using System.Diagnostics;
 
 namespace UtilityTools {
     public class LogPrinter {
-        public String OwnerName { get; set; } = "Unkown";
+        public String OwnerName { get; set; } = "";
 
         private UdpClient? _udpClient = null;
         private IPEndPoint? _remoteEndPoint = null;
@@ -52,7 +51,8 @@ namespace UtilityTools {
         /// <summary>
         /// コンストラクタ
         /// </summary>
-        public LogPrinter() {
+        public LogPrinter(string ownerName = "Unknown") {
+            this.OwnerName = ownerName;
             _threadEnable = false;
             _udpClient = new UdpClient();
             _remoteEndPoint = new IPEndPoint(IPAddress.Loopback,5005);

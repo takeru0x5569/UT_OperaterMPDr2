@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Dlls\IPCView.dll" />
+    <None Remove="Dlls\RecipeManager.dll" />
+    <None Remove="Dlls\RemoteControlLibrary.dll" />
+    <None Remove="Dlls\TcpLibrary.dll" />
+    <None Remove="Dlls\UdpLibrary.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\UtilityTools\UtilityTools.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="RemoteControlLibrary">
+      <HintPath>Dlls\RemoteControlLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="TcpLibrary">
+      <HintPath>Dlls\TcpLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="UdpLibrary">
+      <HintPath>Dlls\UdpLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Dlls\RemoteControlLibrary.dll" />
+    <Resource Include="Dlls\TcpLibrary.dll" />
+    <Resource Include="Dlls\UdpLibrary.dll" />
+  </ItemGroup>
+
+</Project>
