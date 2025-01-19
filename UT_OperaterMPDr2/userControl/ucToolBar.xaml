@@ -18,11 +18,11 @@
         <ToolBarTray>
         <ToolBar>
             <!--接続-->
-            <Button Style="{StaticResource ToolBarButtonStyle}" ToolTip="{x:Static userControl:ucToolBarRES.Connect}">
+            <Button Style="{StaticResource ToolBarButtonStyle}" ToolTip="{x:Static userControl:ucToolBarRES.Connect}" Click="onClick_ConnectButton">
                 <Image Source="{StaticResource IconConnect}"/>
             </Button>
             <!--切断-->
-            <Button Style="{StaticResource ToolBarButtonStyle}" ToolTip="{x:Static userControl:ucToolBarRES.DisConnect}">
+            <Button Style="{StaticResource ToolBarButtonStyle}" ToolTip="{x:Static userControl:ucToolBarRES.DisConnect}"  Click="onClick_DisConnectButton">
                 <Image Source="{StaticResource IconDisConnect}"/>
             </Button>
             <!--初期化-->

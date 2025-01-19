@@ -64,6 +64,8 @@ namespace ScannerLink {
             while(_ret == false) {
                 _ret = _rScanClient.Open();
                 if(_ret == false) {
+                    LogPrinter.Instance.Print(LogPrinter.eLogPriority.WARNING,"InsightScan接続できません");
+                    Thread.Sleep(1000);
                     //? var result = Fixer.GetInstance().GetDialog("InsightScanが起動していることを確認してください。\r\n接続パラメータを確認してください。",
                     //?     "InsightScan接続エラー", CustomMsgBox.Btn.RetryCancel, CustomMsgBox.Mark.Err).ShowDialog();
                     //YesNo選択ダイアログを表示してリトライかキャンセルかを選ばせる
@@ -73,6 +75,7 @@ namespace ScannerLink {
                     //???????}
                 }
             }
+            LogPrinter.Instance.Print(LogPrinter.eLogPriority.INFO,"InsightScan接続しました");
             //フラグクリア
             this.clearFlags();
             return _ret;
@@ -83,6 +86,7 @@ namespace ScannerLink {
         public void Close() {
             _rScanClient?.Close();//リモートを閉じる
             this.clearFlags();//フラグをクリア
+            LogPrinter.Instance.Print(LogPrinter.eLogPriority.INFO,"InsightScan切断しました");
         }
         /// <summary>
         /// スキャナのステータス要求

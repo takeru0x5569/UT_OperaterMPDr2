@@ -22,6 +22,11 @@ namespace UT_OperaterMPDr2 {
         public ucToolBar() {
             InitializeComponent();
         }
-    }
-
-}
+        private void onClick_ConnectButton(object sender,RoutedEventArgs e) {
+            bool ret = ScanSeqManager.GetInstance().Open();
+        }
+        private void onClick_DisConnectButton(object sender,RoutedEventArgs e) {
+            ScanSeqManager.GetInstance().Close();
+        }
+    }//class
+}//namespace

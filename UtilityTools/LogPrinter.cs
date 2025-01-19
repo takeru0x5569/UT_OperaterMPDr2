@@ -5,8 +5,17 @@ using System.Text;
 
 namespace UtilityTools {
     public class LogPrinter {
+        public enum eLogPriority:uint {
+            FATAL = 0x1   << 1,   //致命的エラー(ModbusLinkerの内部処理でエラー)
+            ERROR = 0x1   << 2,   //運用エラー(運用が止まるエラー)
+            WARNING = 0x1 << 3,   //警告(人為的に止めたなど、運用上想定しているが稼働が止まるような情報)
+            INFO = 0x1    << 4,   //正常動作している情報をロギング
+            NOTE = 0x1    << 5,   //運用ログに落とす
+            DEBUG = 0x1   << 6,   //運用ではロギングしない細かい情報
+        }
+        // メッセージを通知するイベント
+        public event EventHandler<string>? MessageReceived;
         public String OwnerName { get; set; } = "";
-
         private UdpClient? _udpClient = null;
         private IPEndPoint? _remoteEndPoint = null;
         /// <summary>
@@ -16,15 +25,7 @@ namespace UtilityTools {
         /// <summary>
         /// 受け付けるログの優先度定義
         /// </summary>
-        public eLogPriority LogPriority { private set; get; }
-        public enum eLogPriority:uint {
-            FATAL = 0x1   << 1,   //致命的エラー(ModbusLinkerの内部処理でエラー)
-            ERROR = 0x1   << 2,   //運用エラー(運用が止まるエラー)
-            WARNING = 0x1 << 3,   //警告(人為的に止めたなど、運用上想定しているが稼働が止まるような情報)
-            INFO = 0x1    << 4,   //正常動作している情報をロギング
-            NOTE = 0x1    << 5,   //運用ログに落とす
-            DEBUG = 0x1   << 6,   //運用ではロギングしない細かい情報
-        }
+        public eLogPriority LogPriority { private set; get; }= eLogPriority.DEBUG;
         /// <summary>
         /// シングルトンインスタンス
         /// </summary>
@@ -47,7 +48,6 @@ namespace UtilityTools {
         /// ロギング中フラグ
         /// </summary>
         private volatile static bool _threadEnable = false;
-//        private UTOpMpd? _owner = null;
         /// <summary>
         /// コンストラクタ
         /// </summary>
@@ -122,7 +122,7 @@ namespace UtilityTools {
             }
         }
         /// <summary>
-        /// スレッド処理本体
+        /// キューからメッセージを取り出すスレッド処理本体
         /// </summary>
         private void ThreadProcess() {
             if(_sw == null) { return; }
@@ -146,6 +146,9 @@ namespace UtilityTools {
             _sw.Dispose();
             _sw = null;
         }
+        /// <summary>
+        /// 
+        /// </summary>
         private void WriteLog(string message) {
             if(_sw == null) { return; }
             _sw.WriteLine(message);
@@ -161,6 +164,8 @@ namespace UtilityTools {
             
             // UDPでメッセージを送信
             this.sendUdp(priority,timeStr,message);
+            // イベントを発火してメッセージを通知
+            MessageReceived?.Invoke(this,message);
 
             lock(lockObj2) {
                 // ロギングが停止されている場合はメッセージを追加しない
@@ -171,6 +176,12 @@ namespace UtilityTools {
                 string msg = $"{timeStr}[{priority}]{message}";
                 _que.Enqueue(msg);
             }
+        }
+        /// <summary>
+        /// キューの内容を取得するメソッド
+        /// </summary>
+        public List<string> GetQueuedMessages() {
+            return _que.ToList();
         }
         /// <summary>
         /// UDPに色付きメッセージを流す

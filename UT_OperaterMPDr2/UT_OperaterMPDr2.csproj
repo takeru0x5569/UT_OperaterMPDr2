@@ -76,6 +76,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\LogScreen\LogScreen.csproj" />
+    <ProjectReference Include="..\ScannerLink\ScannerLink.csproj" />
+    <ProjectReference Include="..\uiDialog\uiDialog.csproj" />
+    <ProjectReference Include="..\UtilityTools\UtilityTools.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="Resources\Action.drawio.png" />
     <Resource Include="Resources\Barcode.drawio.png" />
     <Resource Include="Resources\BarcodeAll.drawio.png" />

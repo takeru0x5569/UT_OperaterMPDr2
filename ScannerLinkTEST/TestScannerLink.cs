@@ -16,6 +16,5 @@ namespace ScannerLinkTEST {
             scn.Close();
         }
 
-
     }//class
 }//namespace

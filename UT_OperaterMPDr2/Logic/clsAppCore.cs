@@ -4,9 +4,15 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ScannerLink;
 
 namespace UT_OperaterMPDr2 {
     public class clsAppCore:INotifyPropertyChanged {
+        private ScanSeqManager _scn = new ScanSeqManager();
+
+
+
+        //ここから仮動作確認用======================================================================================
         private bool _toggleFlag=false;
         private CancellationTokenSource _cancellationTokenSource;
         /// <summary>
@@ -21,9 +27,7 @@ namespace UT_OperaterMPDr2 {
                 }
             }
         }
-
         public event PropertyChangedEventHandler PropertyChanged;
-
         protected virtual void OnPropertyChanged(string propertyName) {
             PropertyChanged?.Invoke(this,new PropertyChangedEventArgs(propertyName));
         }
@@ -44,9 +48,9 @@ namespace UT_OperaterMPDr2 {
                 ToggleFlag = !ToggleFlag;
             }
         }
-
         public void StopToggling() {
             _cancellationTokenSource.Cancel();
         }
+        //ここまで仮動作確認用======================================================================================
     }
 }
